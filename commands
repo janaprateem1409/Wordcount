@@ -1,0 +1,12 @@
+ls -> check the contents 
+pwd -> u will find that u are in home directory  
+       /home/cloudera
+cat > /home/cloudera/Processfile1.txt
+hdfs dfs -ls /   -> find the number of items 
+hdfs dfs -mkdir /inputfolder1  -> create a directory inputfolder1
+hdfs dfs -put /home/cloudera/Processfile1.txt /inputfolder1/   -> put the contents of Processfile1.txt into inputfolder1
+hdfs dfs -cat /inputfolder/Processfile1.txt  -> displays the contents in the Processfile1.txt
+hadoop jar /home/cloudera/Wordcount.jar Wordcount /inputfolder1/Processfile1.txt /out1  -> it will perform the map and reduce operation
+hdfs dfs -ls /out1  -> out1 is the output folder. Now, display the contents in the cout1 folder.
+
+Finally display the output will be the number of words followed by the occurences.
