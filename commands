@@ -8,5 +8,6 @@ hdfs dfs -put /home/cloudera/Processfile2.txt /inputfolder1/   -> put the conten
 hdfs dfs -cat /inputfolder/Processfile2.txt  -> displays the contents in the Processfile1.txt
 hadoop jar /home/cloudera/Wordcount.jar Wordcount /inputfolder2/Processfile2.txt /out2  -> it will perform the map and reduce operation
 hdfs dfs -ls /out2  -> out1 is the output folder. Now, display the contents in the cout1 folder.
+select the 2nd part of the cout1 folder.
 
 Finally display the output will be the number of words followed by the occurences.
